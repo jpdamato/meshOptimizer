@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{13E4F26D-4C22-4155-A9BA-035A8C455CBF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>PrSpain</RootNamespace>
+    <ProjectName>MeshOptimizer</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files (x86)\Windows Kits\8.0\Include\shared;C:\Program Files %28x86%29\Windows Kits\8.0\Include\um;$(VCInstallDir)include;C:\SDKs\GLUT;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;C:\SDKs\TetGen;C:\Program Files (x86)\Intel\OpenCL SDK\3.2\include</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files (x86)\Windows Kits\8.0\Include\shared;C:\Program Files %28x86%29\Windows Kits\8.0\Include\um;$(VCInstallDir)include;C:\SDKs\GLUT;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;C:\Proyects\MeshOptimization\tegGenLib;C:\Program Files (x86)\Intel\OpenCL SDK\3.2\include</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\posDOC\TetGen;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\posDOC\TetGen;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Documents and Settings\All Users\Datos de programa\NVIDIA Corporation\NVIDIA GPU Computing SDK\shared\inc;C:\Documents and Settings\All Users\Datos de programa\NVIDIA Corporation\NVIDIA GPU Computing SDK\OpenCL\common\inc\CL;C:\Intel\TBB\include\;C:\Documents and Settings\All Users\Datos de programa\NVIDIA Corporation\NVIDIA GPU Computing SDK\OpenCL\common\inc</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\SDKs\GLUT</AdditionalLibraryDirectories>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <AdditionalDependencies>glut32.lib;glu32.lib;opengl32.lib;odbc32.lib;odbccp32.lib;C:\Program Files (x86)\Intel\OpenCL SDK\3.2\lib\x64\opencl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;TETLIBRARY;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Intel\TBB\include\</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\SDKs\GLUT</AdditionalLibraryDirectories>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <AdditionalDependencies>glut32.lib;glu32.lib;opengl32.lib;odbc32.lib;odbccp32.lib;C:\Program Files (x86)\Intel\OpenCL SDK\3.2\lib\x64\opencl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Documents and Settings\All Users\Datos de programa\NVIDIA Corporation\NVIDIA GPU Computing SDK\shared\inc;C:\Documents and Settings\All Users\Datos de programa\NVIDIA Corporation\NVIDIA GPU Computing SDK\OpenCL\common\inc\CL;C:\Intel\TBB\include\;C:\Documents and Settings\All Users\Datos de programa\NVIDIA Corporation\NVIDIA GPU Computing SDK\OpenCL\common\inc</AdditionalIncludeDirectories>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glut32.lib;glu32.lib;opengl32.lib;odbc32.lib;odbccp32.lib;C:\Documents and Settings\All Users\Datos de programa\NVIDIA Corporation\NVIDIA GPU Computing SDK\OpenCL\common\lib\oclUtils32.lib;C:\Documents and Settings\All Users\Datos de programa\NVIDIA Corporation\NVIDIA GPU Computing SDK\OpenCL\common\lib\Win32\OpenCL.lib;C:\Documents and Settings\All Users\Datos de programa\NVIDIA Corporation\NVIDIA GPU Computing SDK\shared\lib\shrUtils32.lib;C:\Intel\tbb\lib\ia32\vc10\tbb.lib;D:\posDOC\MeshOptimization\Release\TetGen.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Documents and Settings\All Users\Datos de programa\NVIDIA Corporation\NVIDIA GPU Computing SDK\shared\inc;C:\Documents and Settings\All Users\Datos de programa\NVIDIA Corporation\NVIDIA GPU Computing SDK\OpenCL\common\inc\CL;C:\Intel\TBB\include\;C:\Documents and Settings\All Users\Datos de programa\NVIDIA Corporation\NVIDIA GPU Computing SDK\OpenCL\common\inc</AdditionalIncludeDirectories>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glut32.lib;glu32.lib;opengl32.lib;odbc32.lib;odbccp32.lib;C:\Documents and Settings\All Users\Datos de programa\NVIDIA Corporation\NVIDIA GPU Computing SDK\OpenCL\common\lib\oclUtils32.lib;C:\Documents and Settings\All Users\Datos de programa\NVIDIA Corporation\NVIDIA GPU Computing SDK\OpenCL\common\lib\Win32\OpenCL.lib;C:\Documents and Settings\All Users\Datos de programa\NVIDIA Corporation\NVIDIA GPU Computing SDK\shared\lib\shrUtils32.lib;C:\Intel\tbb\lib\ia32\vc10\tbb.lib;D:\posDOC\MeshOptimization\Release\TetGen.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="tegGenLib\predicates.cxx" />
+    <ClCompile Include="tegGenLib\tetgen.cxx" />
+    <ClCompile Include="VolumeMeshOptimizer\cl_utils.cpp" />
+    <ClCompile Include="VolumeMeshOptimizer\cl_VolumeMeshSmooth.cpp" />
+    <ClCompile Include="VolumeMeshOptimizer\Math3D.cpp" />
+    <ClCompile Include="VolumeMeshOptimizer\MeshOptimizer.cpp" />
+    <ClCompile Include="VolumeMeshOptimizer\testSurface.cpp" />
+    <ClCompile Include="VolumeMeshOptimizer\u_colorScale.cpp" />
+    <ClCompile Include="VolumeMeshOptimizer\u_delphiClasses.cpp" />
+    <ClCompile Include="VolumeMeshOptimizer\u_elementCluster.cpp" />
+    <ClCompile Include="VolumeMeshOptimizer\u_MeshLoaders.cpp" />
+    <ClCompile Include="VolumeMeshOptimizer\u_MeshSmooth.cpp" />
+    <ClCompile Include="VolumeMeshOptimizer\u_ParallelFunctions.cpp" />
+    <ClCompile Include="VolumeMeshOptimizer\u_ProcessTime.cpp" />
+    <ClCompile Include="VolumeMeshOptimizer\u_qualityMetrics.cpp" />
+    <ClCompile Include="VolumeMeshOptimizer\u_ShowMetrics.cpp" />
+    <ClCompile Include="VolumeMeshOptimizer\u_TetGenInterface.cpp" />
+    <ClCompile Include="VolumeMeshOptimizer\u_TetraFunctions.cpp" />
+    <ClCompile Include="VolumeMeshOptimizer\u_tools.cpp" />
+    <ClCompile Include="VolumeMeshOptimizer\u_Types.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="tegGenLib\tetgen.h" />
+    <ClInclude Include="VolumeMeshOptimizer\cl_utils.h" />
+    <ClInclude Include="VolumeMeshOptimizer\cl_VolumeMeshSmooth.h" />
+    <ClInclude Include="VolumeMeshOptimizer\Math3D.h" />
+    <ClInclude Include="VolumeMeshOptimizer\octreeIterator.h" />
+    <ClInclude Include="VolumeMeshOptimizer\u_colorScale.h" />
+    <ClInclude Include="VolumeMeshOptimizer\u_delphiClasses.h" />
+    <ClInclude Include="VolumeMeshOptimizer\u_elementCluster.h" />
+    <ClInclude Include="VolumeMeshOptimizer\u_MeshLoaders.h" />
+    <ClInclude Include="VolumeMeshOptimizer\u_MeshSmooth.h" />
+    <ClInclude Include="VolumeMeshOptimizer\u_ParallelFunctions.h" />
+    <ClInclude Include="VolumeMeshOptimizer\u_ProcessTime.h" />
+    <ClInclude Include="VolumeMeshOptimizer\u_qualityMetrics.h" />
+    <ClInclude Include="VolumeMeshOptimizer\u_ShowMetrics.h" />
+    <ClInclude Include="VolumeMeshOptimizer\u_TetGenInterface.h" />
+    <ClInclude Include="VolumeMeshOptimizer\u_TetraFunctions.h" />
+    <ClInclude Include="VolumeMeshOptimizer\u_tools.h" />
+    <ClInclude Include="VolumeMeshOptimizer\u_Types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VolumeMeshOptimizer\smooth.cl" />
+    <None Include="VolumeMeshOptimizer\smooth_orig.cl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

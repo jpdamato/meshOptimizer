@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="cl_utils.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cl_VolumeMeshSmooth.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Math3D.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh_Properties.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshOptimizer.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="u_colorScale.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="u_delphiClasses.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="u_elementCluster.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="u_MeshLoaders.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="u_MeshSmooth.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="u_ParallelFunctions.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="u_ProcessTime.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="u_qualityMetrics.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="u_ShowMetrics.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="u_TetGenInterface.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="u_TetraFunctions.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="u_tools.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="u_Types.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cl_utils.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="cl_VolumeMeshSmooth.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Math3D.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="u_colorScale.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="u_delphiClasses.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="u_elementCluster.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="u_MeshLoaders.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="u_MeshSmooth.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="u_ParallelFunctions.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="u_ProcessTime.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="u_qualityMetrics.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="u_ShowMetrics.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="u_TetGenInterface.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="u_TetraFunctions.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="u_tools.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="u_Types.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="smooth.cl">
+      <Filter>Source</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{bac2f418-0f10-4383-b1c4-eaa25123a649}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
